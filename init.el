@@ -18,3 +18,6 @@
  (load-file "~/.emacs.d/plugins/color-theme-twilight.el")
 (add-to-list 'load-path "~/.emacs.d/plugins/emacs-nav/")
  (require 'nav)
+
+(require 'zencoding-mode)
+ (add-hook 'sgml-mode-hook 'zencoding-mode) ;; Auto-start on any markup modes
