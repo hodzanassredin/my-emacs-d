@@ -16,3 +16,5 @@
 (require 'color-theme)
  (color-theme-initialize)
  (load-file "~/.emacs.d/plugins/color-theme-twilight.el")
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-nav/")
+ (require 'nav)
