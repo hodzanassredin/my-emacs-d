@@ -9,3 +9,10 @@
     (load
      (expand-file-name "~/.emacs.d/elpa/package.el"))
   (package-initialize))
+
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+(add-to-list 'load-path "~/.emacs.d/plugins/color-theme")
+
+(require 'color-theme)
+ (color-theme-initialize)
+ (load-file "~/.emacs.d/plugins/color-theme-twilight.el")
