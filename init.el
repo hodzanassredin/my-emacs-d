@@ -27,3 +27,16 @@
 (global-ede-mode 1)                      ; Enable the Project management system
 (semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
 (global-srecode-minor-mode 1)            ; Enable template insertion menu
+
+(setq load-path (cons "~/.emacs.d/plugins/org/lisp" load-path))
+(require 'org-install)
+;; The following lines are always needed.  Choose your own keys.
+     (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+     (global-set-key "\C-cl" 'org-store-link)
+     (global-set-key "\C-ca" 'org-agenda)
+     (global-set-key "\C-cb" 'org-iswitchb)
+ (global-font-lock-mode 1)                     ; for all buffers
+
+(setq org-agenda-files (list "~/org/tasks.org"
+                             "~/org/test.org"))
+
